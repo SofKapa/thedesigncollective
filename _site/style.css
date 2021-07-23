@@ -37,14 +37,14 @@ html {scroll-behavior: smooth;}
 
 /*------------------------------------------------ Image Styles */
 
-/* .portrait-tall  {padding-bottom: 175%;}
+.portrait-tall  {padding-bottom: 175%;}
 .portrait       {padding-bottom: 125%;}
 .square         {padding-bottom: 100%;}
 .landscape      {padding-bottom: 66%;}
 .landscape-wide {padding-bottom: 56%;}
 
 
-.bg-pos-t { background-position: top; }
+/* .bg-pos-t { background-position: top; }
 .bg-pos-b { background-position: bottom; }
 .bg-pos-l { background-position: left; }
 .bg-pos-r { background-position: right; } */
@@ -269,6 +269,7 @@ footer a:hover {
 .bg-mockup {
     background-image: url('/images/images/mockup.jpg');
 }
+
 
 /* Responsive video */
 .embed-container {
