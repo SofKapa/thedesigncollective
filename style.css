@@ -7,8 +7,12 @@
     box-sizing: border-box;
 }
 
+
+/* Never let an image be bigger than its container */
 img { max-width: 100%; }
 
+
+/* Select anything with a class of 'grid' (grid, grid-middle, ...) */
 [class*=grid] {
     margin:0;
 }
