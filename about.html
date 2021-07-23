@@ -1,7 +1,68 @@
 ---
 layout: default
+banner_image: /images/images/plant.jpg
+team:
+ - name: Greg
+   bio: Big Boss Coder
+   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ratione deserunt, reiciendis doloribus in maxime! Necessitatibus odio consequuntur quidem, animi enim unde nisi fuga quam, nulla quaerat excepturi sed.
+   profile_image: /images/images/profile-1.jpg
+ - name: Jane
+   bio: Big Boss Coder
+   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ratione deserunt, reiciendis doloribus in maxime! Necessitatibus odio consequuntur quidem, animi enim unde nisi fuga quam, nulla quaerat excepturi sed. 
+   profile_image: /images/images/profile-2.jpg
+ - name: Johnny
+   bio: Big Boss Coder
+   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ratione deserunt, reiciendis doloribus in maxime! Necessitatibus odio consequuntur quidem, animi enim unde nisi fuga quam, nulla quaerat excepturi sed.
+   profile_image: /images/images/profile-3.jpg 
+about-video-id: xXw7wOuABUg
 ---
 
-<section>
-    ABOUT
+<!--------------------------------------------- BANNER -->
+<section class="tall-60 grid bg-green">
+    <div class="col-5-middle padded editable">
+        <h2> Meet our growing family </h2>   
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ex ut, eaque ratione amet neque ipsum? Cupiditate ipsam voluptatem quia corporis repellendus inventore perspiciatis illum totam nihil maiores! Molestiae, consequuntur?</p>
+    </div>
+    <div class="col-7 bg-image bg-plant" style="background-image: url('{{page.banner_image}}')"></div>
+</section> 
+
+
+<!------------------------------ MEET THE TEAM SECTION -->
+<section class="padded">
+   <div class="capped-width">
+
+ <!-- Jekyll Loop -->
+ {% for person in page.team %}
+
+    <div class="grid flex-flip-alternate">
+
+        <div class="col-5 padded-1">
+            <img src="{{ person.profile_image }}">
+        </div>
+        <div class="col-7-middle padded-1">
+            <h3> Meet {{ person.name }} </h3>
+            <p><strong> {{ person.bio }} </strong></p>
+            <p> {{person.description }} </p>
+        </div>
+
+
+    </div>
+
+ {% endfor %}
+   </div>
+
+</section>
+
+
+
+<!---------------------- MEET THE TEAM SECTION - VIDEO -->
+<section class="padded bg-green center">
+    <h2 class="editable">Watch our corny 'meet the team' video</h2>
+    <p class="emphasis editable">Featured j-bomb the terrier</p>
+    <div class='padded-1'>
+        <div class='embed-container'><iframe src='https://www.youtube.com/embed/{{ page.about-video-id }}' frameborder='0' allowfullscreen></iframe></div>
+    </div>
+
+    
+
 </section>

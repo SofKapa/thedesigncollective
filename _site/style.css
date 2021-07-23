@@ -69,6 +69,18 @@ html {scroll-behavior: smooth;}
 .tall-100 {min-height: 100vh;}
 
 
+/* Capped Width */
+.capped-width{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.capped-width-narrow{
+    max-width: 100px;
+    margin: auto;
+}
+
+
 /* Padding */
 .padded    { padding: 5%;}
 .padded-sm { padding: 1rem;}
@@ -143,6 +155,12 @@ html {scroll-behavior: smooth;}
 .right  { text-align: right; }
 
 
+/* Flip order of every second row on a grid */
+.flex-flip-alternate:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+
 
 /* --------------------------------------------------Typography */
 
@@ -205,7 +223,10 @@ a:hover { color: #a2745c; }
     font-size: 0.9rem;
 }
 
-
+.emphasis{
+    font-size: 1.1rem;
+    font-weight: 400;
+}
 
 /* ------------------------------------- Header & Footer Styles */
 
@@ -229,6 +250,10 @@ footer a:hover {
     background-image: url('/images/images/plant.jpg');
 }
 
+.profile-image {
+    border-radius: 100%;
+}
+
 .bg-plant {
     background-image: url('/images/images/plant.jpg');
     background-position: 50% 43%;
@@ -245,6 +270,24 @@ footer a:hover {
     background-image: url('/images/images/mockup.jpg');
 }
 
+/* Responsive video */
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 
 /* --------------------------------------------------- Icon Grid*/
