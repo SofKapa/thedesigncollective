@@ -203,7 +203,7 @@ nav a {
     padding: 0.25rem;
 }
 
-a:hover { color: #a2745c; }
+a:hover { color: #ccbab1; }
 
 .button {
   text-decoration: none;
@@ -270,13 +270,6 @@ footer a:hover {
     background-image: url('/images/images/mockup.jpg');
 }
 
-.right-arrow{
-    max-width: 2rem;
-    margin-left: 1rem;
-    color: white;
-    opacity: 40%;
-    margin-top: 0.3rem;
-}
 
 
 /* Responsive video */
@@ -306,6 +299,59 @@ footer a:hover {
     opacity: 0.8;
     margin: 1rem 0;
 }
+
+.right-arrow{
+    max-width: 2rem;
+    margin-left: 1rem;
+    color: white;
+    opacity: 40%;
+    margin-top: 0.3rem;
+}
+
+
+/* ------------------------------------------------ Contact Form*/
+
+form input,
+form textarea{
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border: 2px solid rgb(220,220,220);
+  outline: none;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+
+form input:focus,
+form textarea:focus{
+  border-color: #9b9b81;
+}
+
+
+textarea{
+  min-height: 6rem;
+}
+
+form label{
+  margin-top: 1.5rem;
+  display: block;
+  color:#a2745c;
+  font-weight: bold;
+}
+
+form button{
+    background-color:#a2745c;
+    color: white;
+    border: 2px solid #a2745c;
+    letter-spacing: 0.2rem;
+    padding: 0.5rem 2rem;
+    margin: 0.5rem 0;
+    font-weight: bold;
+  }
+
+
+
 
 
 
