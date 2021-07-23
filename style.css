@@ -265,6 +265,7 @@ footer a:hover {
 
     .center-sm { text-align: center; }
 
+    /* Changes the direction of our columns */
     .flex-flip-sm { flex-direction: column-reverse; }
 
     .bg-plant {
