@@ -270,6 +270,14 @@ footer a:hover {
     background-image: url('/images/images/mockup.jpg');
 }
 
+.right-arrow{
+    max-width: 2rem;
+    margin-left: 1rem;
+    color: white;
+    opacity: 40%;
+    margin-top: 0.3rem;
+}
+
 
 /* Responsive video */
 .embed-container {
