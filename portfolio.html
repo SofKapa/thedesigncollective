@@ -9,9 +9,9 @@ layout: default
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, cupiditate nostrum voluptatum fugit, corrupti consequatur molestiae amet sunt nam provident, iure doloribus reiciendis quod sequi! Fugit ipsa ea nesciunt doloribus.</p>
     </div>
 
-    {% for project in site.projects %}
+    {% for project in site.projects limit:5 %}
 
-    <div class="col-7_sm-12-middle">
+    <div class="col-7_sm-12-middle margin-b-1">
         <div class="bg-image landscape" style="background-image: url('{{ project.featured_image }}')"></div>
     </div>
 
