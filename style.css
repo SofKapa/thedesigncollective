@@ -202,25 +202,6 @@ a:hover { color: #a2745c; }
 }
 
 
-/* Header & Footer */
-header {
-    padding: 2% 5%;
-}
-
-footer a:hover { 
-    color: #d3b4a2; 
-}
-
-
-/* Icon Grid Section  */
-.icon-section img {
-    max-width: 3rem;
-    opacity: 0.8;
-    margin: 1rem 0;
-}
-
-
-
 
 /* ------------------------------------- Header & Footer Styles */
 
