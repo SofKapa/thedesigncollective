@@ -1,0 +1,279 @@
+
+/* ---------------------------------------------------CSS Reset */
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+/* Never let an image be bigger than its container */
+img { max-width: 100%; }
+
+
+/* Select anything with a class of 'grid' (grid, grid-middle, ...) */
+[class*=grid] {
+    margin:0;
+}
+
+html {scroll-behavior: smooth;}
+
+
+
+/* ------------------------Temporary styles for structural html */
+
+/* *{
+    padding: 0.5rem;
+    border: 2px solid rgb(240,240,240)
+} */
+
+
+/* html{
+    border: none;
+} */
+
+
+
+/*------------------------------------------------ Image Styles */
+
+/* .portrait-tall  {padding-bottom: 175%;}
+.portrait       {padding-bottom: 125%;}
+.square         {padding-bottom: 100%;}
+.landscape      {padding-bottom: 66%;}
+.landscape-wide {padding-bottom: 56%;}
+
+
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; } */
+
+/* 
+.bg-pos-t-l { background-position: left top; }
+.bg-pos-b-r { background-position: right bottom; }
+
+.bg-pos-t-l { background-position: 10% 10%; }
+.bg-pos-b-r { background-position: 85% 85%; } */
+
+
+
+/* --------------------------Universal Styles & Utility Classes */
+
+/* Viewport Height */
+.tall-50  {min-height: 50vh;}
+.tall-60  {min-height: 60vh;}
+.tall-70  {min-height: 70vh;}
+.tall-80  {min-height: 80vh;}
+.tall-90  {min-height: 90vh;}
+.tall-100 {min-height: 100vh;}
+
+
+/* Padding */
+.padded    { padding: 5%;}
+.padded-sm { padding: 1rem;}
+.padded-md { padding: 5%;}
+.padded-lg { padding: 10%;}
+
+.padded-0 { padding: 0; }
+.padded-05 { padding: 0.5rem; }
+.padded-1  { padding: 1rem; }
+.padded-2  { padding: 2rem; }
+
+.padded-t { padding-top: 5%; }
+.padded-b { padding-bottom: 5%; }
+.padded-l { padding-left: 5%; }
+.padded-r { padding-right: 5%; }
+
+.padded-tb { padding-top: 5%; padding-bottom: 5%; }
+.padded-lr { padding-left: 5%; padding-right: 5%; }
+
+.padded-t-1 { padding-top: 1rem; }
+.padded-b-1 { padding-bottom: 1rem; }
+.padded-l-1 { padding-left: 1rem; }
+.padded-r-1 { padding-bottom: 1rem; }
+
+.padded-t-2 { padding-top: 2rem; }
+.padded-b-2 { padding-bottom: 2rem; }
+.padded-l-2 { padding-left: 2rem; }
+.padded-r-2 { padding-bottom: 2rem; }
+
+.padded-t-0 { padding-top: 0; }
+.padded-b-0 { padding-bottom: 0; }
+.padded-l-0 { padding-left: 0; }
+.padded-r-0 { padding-bottom: 0; }
+
+
+/* Margins */
+.margin-t { margin-top: 5%; }
+.margin-b { margin-bottom: 5%; }
+.margin-l { margin-left: 5%; }
+.margin-r { margin-right: 5%; }
+
+.margin-t-1 { margin-top: 1rem; }
+.margin-b-1 { margin-bottom: 1rem; }
+.margin-l-1 { margin-left: 1rem; }
+.margin-r-1 { margin-right: 1rem; }
+
+.margin-t-2 { margin-top: 2rem; }
+.margin-b-2 { margin-bottom: 2rem; }
+.margin-l-2 { margin-left: 2rem; }
+.margin-r-2 { margin-right: 2rem; }
+
+.margin-t-0 { margin-top: 0; }
+.margin-b-0 { margin-bottom: 0; }
+.margin-l-0 { margin-left: 0; }
+.margin-r-0 { margin-right: 0; }
+
+.margin-tb { margin-top: 5%; margin-bottom: 5%; }
+.margin-lr { margin-left: 5%; margin-right: 5%; }
+
+
+/* Background Color */
+.bg-rust  { background-color: #d3b4a2; }
+.bg-green { background-color: #9b9b81; }
+.bg-dark  { background-color: #a2745c; }
+
+
+/* Text Styles */
+.light-text { color: white; } 
+
+.left   { text-align: left; }
+.center { text-align: center; }
+.right  { text-align: right; }
+
+
+
+/* --------------------------------------------------Typography */
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    color: rgb(60,60,60);
+}
+
+h2,h3,h4,h5,h6 {
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.01em;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+p {
+ 	font-weight: 300;   
+ 	line-height: 1.3;
+ 	margin-bottom: 0.8rem;
+ 	font-size: 1rem;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+a {
+    color: inherit;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0.25rem;
+}
+
+a:hover { color: #a2745c; }
+
+.button {
+  text-decoration: none;
+  border: 2px solid; 
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  font-weight: 400;
+  color: white;
+}
+
+.bg-dark .button:hover {
+    color: #d3b4a2;
+}
+
+.subtle { 
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
+
+
+/* ------------------------------------- Header & Footer Styles */
+
+header {
+    padding: 2% 5%;
+}
+
+footer a:hover { 
+    color: #d3b4a2; 
+}
+
+
+
+/* ------------------------------------------- Background Images*/
+
+.bg-image {
+    background-color: rgb(240,240,240); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-image: url('/images/images/plant.jpg');
+}
+
+.bg-plant {
+    background-image: url('/images/images/plant.jpg');
+    background-position: 50% 43%;
+}
+
+.bg-plant-2 {
+    background-image: url('/images/images/plant-2.jpg');
+    background-position: 75% 50%;
+}
+.bg-meeting {
+    background-image: url('/images/images/meeting.jpg');
+}
+.bg-mockup {
+    background-image: url('/images/images/mockup.jpg');
+}
+
+
+
+/* --------------------------------------------------- Icon Grid*/
+
+.icon-section img {
+    max-width: 3rem;
+    opacity: 0.8;
+    margin: 1rem 0;
+}
+
+
+
+/* ---------------------------------------------- Responsiveness*/
+
+@media(max-width: 48em) {
+
+    .hide-sm { display: none; }
+
+    .center-sm { text-align: center; }
+
+    /* Changes the direction of our columns */
+    .flex-flip-sm { flex-direction: column-reverse; }
+
+    .bg-plant {
+        background-image: url('/images/plant-light.png');
+    }
+    
+    .bg-plant-2 {
+        background-image: url('/images/plant-2-light.png');
+        background-position: 45% 50%;
+    }
+}
