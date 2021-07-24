@@ -75,6 +75,11 @@ html {scroll-behavior: smooth;}
     margin: auto;
 }
 
+.capped-width-medium{
+    max-width: 500px;
+    margin: auto;
+}
+
 .capped-width-narrow{
     max-width: 100px;
     margin: auto;
@@ -243,6 +248,24 @@ header {
 
 footer a:hover { 
     color: #d3b4a2; 
+}
+
+
+
+/* ----------------------------------------------- Explore Page */
+.explore-page h1{
+    margin-bottom: 2rem;
+}
+
+.explore-page a{
+    display: block;
+    padding: 0.5rem;
+    border: 2px solid;
+    margin-bottom: 0.5rem;
+}
+
+.explore-page .featured{
+    background-color:#a2745c;
 }
 
 
