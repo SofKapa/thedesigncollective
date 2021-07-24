@@ -203,6 +203,10 @@ nav a {
     padding: 0.25rem;
 }
 
+header a{
+    text-decoration: none;
+}
+
 a:hover { color: #ccbab1; }
 
 .button {
@@ -227,6 +231,9 @@ a:hover { color: #ccbab1; }
     font-size: 1.1rem;
     font-weight: 400;
 }
+
+
+
 
 /* ------------------------------------- Header & Footer Styles */
 
